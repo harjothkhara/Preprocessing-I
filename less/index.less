@@ -112,3 +112,51 @@ header {
 		}
 	}
 }
+
+#ctr{
+	display: flex;
+	}
+	.ctr-title {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 25px;
+		margin: 0 auto;
+		@media (max-width: 500px) {
+			padding-top: 0px;
+		}
+		h1 {
+			letter-spacing: 0.7rem;
+			font-size: 7rem;
+		}
+		h2 {
+			font-size: 2.5rem;
+			margin: 20px;
+		}
+		p {
+			font-size: 1.8rem;
+			margin: 20px;
+			padding-bottom: 40px;
+			border-bottom: @borderStyle;
+		}
+		.buttons {
+			padding: 24px;
+			display: flex;
+			justify-content: space-evenly;
+			width: 100%;
+			button {
+				padding: 35px 20px;
+				background: black
+				color: #FFF;
+				border-radius: 4px;
+				border: solid 1px rgb(36, 4, 58);
+				cursor: pointer;
+				&:hover {
+	background: #563594;
+	border: solid 1px rgb(88, 42, 119);
+				}
+			}
+		}
+	}
+}
