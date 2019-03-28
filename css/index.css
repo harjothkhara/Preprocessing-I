@@ -134,7 +134,54 @@ html,
 body {
   height: 100%;
 }
-.resize {
-  max-width: 70%;
-  max-height: 30%;
+.container {
+  max-width: 880px;
+  padding: 20px;
+  margin: 0 auto;
+  border: purple;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    padding: 0;
+  }
+}
+header {
+  margin: 20px;
+  width: 100%;
+  border: red;
+}
+@media (max-width: 500px) {
+  header {
+    width: 500px;
+    margin: 0;
+    padding: 0;
+  }
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid blue;
+  padding: 25px;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    display: flex;
+    border: 0;
+    align-items: center;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: rgba(153, 149, 149, 0.8);
+}
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 2rem;
+    padding: 10px 0;
+    border-bottom: 1px solid blue;
+    width: 100%;
+    text-align: center;
+  }
 }
